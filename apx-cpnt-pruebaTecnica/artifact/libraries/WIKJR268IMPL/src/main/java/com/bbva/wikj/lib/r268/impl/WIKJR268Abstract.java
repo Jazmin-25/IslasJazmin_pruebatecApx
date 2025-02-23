@@ -1,15 +1,17 @@
 package com.bbva.wikj.lib.r268.impl;
-
 import com.bbva.elara.configuration.manager.application.ApplicationConfigurationService;
 import com.bbva.elara.library.AbstractLibrary;
+import com.bbva.wikj.dto.id.DtoIn;
+import com.bbva.wikj.dto.id.DtoOut;
 import com.bbva.wikj.lib.r268.WIKJR268;
+import com.bbva.wikj.lib.r269.WIKJR269;
 
-/**
- * This class automatically defines the libraries and utilities that it will use.
- */
+
 public abstract class WIKJR268Abstract extends AbstractLibrary implements WIKJR268 {
 
 	protected ApplicationConfigurationService applicationConfigurationService;
+
+	protected WIKJR269 wikjR269;
 
 
 	/**
@@ -19,4 +21,12 @@ public abstract class WIKJR268Abstract extends AbstractLibrary implements WIKJR2
 		this.applicationConfigurationService = applicationConfigurationService;
 	}
 
+	/**
+	* @param wikjR269 the this.wikjR269 to set
+	*/
+	public void setWikjR269(WIKJR269 wikjR269) {
+		this.wikjR269 = wikjR269;
+	}
+
+	public abstract DtoOut execute(DtoIn dtoIn);
 }

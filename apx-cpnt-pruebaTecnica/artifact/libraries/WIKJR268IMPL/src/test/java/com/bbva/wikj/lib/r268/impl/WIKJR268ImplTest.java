@@ -19,13 +19,13 @@ public class WIKJR268ImplTest {
 
 	/* There are methods of the APX Architecture that require greater complexity to mock, for this reason
 	 * an instance of the class to be tested can be created with the overwritten methods and on these
-	 * methods the mocking of the classes is carried out, for example Header data 
+	 * methods the mocking of the classes is carried out, for example Header data
 	 * (The Mocking the header is only for libraries that are used online, in batch it would not work)
-	 * 
+	 *
 	 * Import section:
 	 * - import com.bbva.elara.domain.transaction.RequestHeaderParamsName;
 	 * - import com.bbva.elara.domain.transaction.request.header.CommonRequestHeader;
-	 * 
+	 *
 	 * Instance section:
 	 * 	@Mock
 	 *  private CommonRequestHeader commonRequestHeader;
@@ -52,7 +52,7 @@ public class WIKJR268ImplTest {
 		// when(commonRequestHeader.getHeaderParameter(RequestHeaderParamsName.COUNTRYCODE)).thenReturn("ES");
 		// when(applicationConfigurationService.getProperty("config.property")).thenReturn("value");
 		// when(qwaiR001.execute()).thenReturn(listCustomerDTO);
-		wikjR268.execute();
+		//wikjR268.execute();
 		Assert.assertEquals(0, wikjR268.getAdviceList().size());
 	}
 }

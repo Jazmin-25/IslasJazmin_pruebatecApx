@@ -1,13 +1,9 @@
 package com.bbva.wikj.lib.r268;
+import com.bbva.wikj.dto.id.DtoIn;
+import com.bbva.wikj.dto.id.DtoOut;
 
-/**
- * The  interface WIKJR268 class...
- */
 public interface WIKJR268 {
 
-	/**
-	 * The execute method...
-	 */
-	void execute();
+	DtoOut execute(DtoIn dtoIn);
 
 }

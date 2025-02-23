@@ -22,11 +22,39 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>com.bbva.elara</groupId>
+			<artifactId>elara-test</artifactId>
+			<version>${apx.core.online.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Test dependencies -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+		<!-- End test dependencies -->
+		<dependency>
+			<groupId>com.bbva.wikj.dto.id</groupId>
+			<artifactId>WIKJC268</artifactId>
+			<version>[0.0, )</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bbva.wikj</groupId>
+			<artifactId>WIKJR268</artifactId>
+			<version>0.0.0</version>
+		</dependency>
+        </dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
@@ -57,9 +85,9 @@
 							<goal>run</goal>
 						</goals>
 						<configuration>
-							<tasks>
-								<copy file="./target/${project.artifactId}.jar" todir="${outputDirectoryTransactions}" />
-							</tasks>
+							<target>
+								<copy file="./target/${project.artifactId}.jar" todir="${outputDirectoryTransactions}"/>
+							</target>
 						</configuration>
 					</execution>
 				</executions>
@@ -67,6 +95,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.7.201606060606</version>
 				<executions>
 					<execution>
 						<id>default-prepare-agent</id>

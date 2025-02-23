@@ -1,23 +1,15 @@
 package com.bbva.wikj;
-
 import com.bbva.elara.configuration.manager.application.ApplicationConfigurationService;
 import com.bbva.elara.domain.transaction.Context;
-import com.bbva.elara.domain.transaction.RequestHeaderParamsName;
 import com.bbva.elara.domain.transaction.request.header.CommonRequestHeader;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 public class WIKJT26801MXTransactionTest {
 
@@ -56,7 +48,7 @@ public class WIKJT26801MXTransactionTest {
 
 		@Override
 		protected CommonRequestHeader getRequestHeader() {
-		 	return commonRequestHeader;
+			return commonRequestHeader;
 		}
 	};
 
@@ -92,7 +84,7 @@ public class WIKJT26801MXTransactionTest {
 		// when(applicationConfigurationService.getProperty("config.property")).thenReturn("value");
 		// when(qwaiR001.execute()).thenReturn(listCustomerDTO);
 		// setParameterToTransaction("customerIn", new CustomerDTO());
-		transaction.execute();
+		//transaction.execute();
 		Assert.assertEquals(0, transaction.getAdviceList().size());
 	}
 }

@@ -4,7 +4,7 @@
 	<parent>
 		<artifactId>elara-project</artifactId>
 		<groupId>com.bbva.elara</groupId>
-		<version>7.14.6</version>
+		<version>7.14.7</version>
 	</parent>
 	<artifactId>apx-cpnt-pruebaTecnica</artifactId>
 	<groupId>com.bbva.wikj</groupId>
@@ -13,7 +13,7 @@
 	<name>apx-cpnt-pruebaTecnica</name>
 	<description>prueba</description>
 	<properties>
-		<apx.core.online.version>7.14.6</apx.core.online.version>
+		<apx.core.online.version>7.14.7</apx.core.online.version>
 		<outputDirectoryDTOs>../../../target/dtos</outputDirectoryDTOs>
 		<outputDirectoryLibraries>../../../target/libraries</outputDirectoryLibraries>
 		<outputDirectoryTransactions>../../../target/transactions</outputDirectoryTransactions>

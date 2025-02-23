@@ -44,9 +44,9 @@
 					<execution>
 						<phase>install</phase>
 						<configuration>
-							<tasks>
+							<target>
 								<copy todir="${outputDirectoryDTOs}" file="./target/${project.artifactId}.jar" />
-							</tasks>
+							</target>
 						</configuration>
 						<goals>
 							<goal>run</goal>

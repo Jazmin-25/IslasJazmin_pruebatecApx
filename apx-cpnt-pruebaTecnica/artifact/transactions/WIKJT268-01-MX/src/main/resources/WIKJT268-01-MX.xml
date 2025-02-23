@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <transaction xmlns="http://www.w3schools.com" transactionName="WIKJT268" application="WIKJ" version="01" country="MX" language="ES">
-	<paramsIn/>
-	<paramsOut/>
+	<paramsIn>
+		<dto order="1" name="dtoIn" mandatory="1" package="com.bbva.wikj.dto.id.DtoIn" artifactId="WIKJC268">
+			<parameter order="1" name="id" mandatory="0" type="String" size="5"/>
+			<parameter order="2" name="nuip" mandatory="0" type="String" size="10"/>
+			<parameter order="3" name="full_name" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="phone" mandatory="0" type="String" size="15"/>
+			<parameter order="5" name="address" mandatory="0" type="String" size="30"/>
+		</dto>
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="dtoOut" mandatory="0" package="com.bbva.wikj.dto.id.DtoOut" artifactId="WIKJC268">
+			<parameter order="1" name="id" mandatory="0" type="String" size="5"/>
+			<parameter order="2" name="nuip" mandatory="0" type="String" size="10"/>
+			<parameter order="3" name="full_name" mandatory="0" type="String" size="50"/>
+			<parameter order="4" name="phone" mandatory="0" type="String" size="15"/>
+			<parameter order="5" name="address" mandatory="0" type="String" size="30"/>
+		</dto>
+	</paramsOut>
 	<description>trx</description>
 </transaction>

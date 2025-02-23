@@ -15,7 +15,14 @@
 	<properties>
 		<osgi.version.manifest>0.0</osgi.version.manifest>
 	</properties>
-	<dependencies/>
+	<dependencies>
+		<dependency>
+			<groupId>com.bbva.wikj.dto.id</groupId>
+			<artifactId>WIKJC268</artifactId>
+			<version>0.0.0</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
@@ -39,9 +46,9 @@
 					<execution>
 						<phase>install</phase>
 						<configuration>
-							<tasks>
+							<target>
 								<copy todir="${outputDirectoryLibraries}" file="./target/${project.artifactId}.jar" />
-							</tasks>
+							</target>
 						</configuration>
 						<goals>
 							<goal>run</goal>
