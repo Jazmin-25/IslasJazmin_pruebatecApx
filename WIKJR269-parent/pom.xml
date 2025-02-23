@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.bbva.elara</groupId>
+		<artifactId>elara-project</artifactId>
+		<version>7.14.7</version>
+	</parent>
+	<groupId>com.bbva.wikj</groupId>
+	<artifactId>WIKJR269-parent</artifactId>
+	<version>0.0.0</version>
+	<name>WIKJR269-parent</name>
+	<description>lib</description>
+	<packaging>pom</packaging>
+	<properties>
+		<outputDirectoryLibraries>../target</outputDirectoryLibraries>
+		<apx.core.online.version>7.14.6</apx.core.online.version>
+		<apx.core.batch.version>7.14.2</apx.core.batch.version>
+		<jacoco.no.coverage>0.00</jacoco.no.coverage>
+		<jacoco.min.coverage>0.80</jacoco.min.coverage>
+		<jacoco.type.coverage>COMPLEXITY</jacoco.type.coverage>
+	</properties>
+	<modules>
+		<module>WIKJR269</module>
+		<module>WIKJR269IMPL</module>
+	</modules>
+</project>
