@@ -58,7 +58,6 @@ CREATE TABLE WIKJ.T_WIKJ_HAB_PRUEBAFINAL (
 - 🐳 Docker (Opcional para base de datos local)
 
 - 📬 Postman (Para pruebas de API REST)
-- 
 - 🖥 IntelliJ IDEA (IDE de desarrollo)
 
 ---
