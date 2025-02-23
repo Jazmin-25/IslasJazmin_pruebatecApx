@@ -1,0 +1,52 @@
+CREATE USER WIKJ IDENTIFIED BY oracle;
+GRANT CONNECT TO WIKJ;
+GRANT RESOURCE TO WIKJ;
+ALTER USER WIKJ quota unlimited on SYSTEM;
+CREATE TABLE WIKJ."T_WIKJ_HAB"(
+	dni Number(9) NOT NULL PRIMARY KEY,
+	firstName VARCHAR(30),
+	lastName VARCHAR(30)
+)
+EJERCICIO2
+
+SELECT DNI, FIRSTNAME, LASTNAME
+FROM WIKJ.T_WIKJ_HAB;
+
+
+INSERT INTO WIKJ.T_WIKJ_HAB
+(DNI, FIRSTNAME, LASTNAME)
+VALUES(0, '', '');
+
+
+CREATE TABLE WIKJ."T_WIKJ"(
+	user_id Number(9) NOT NULL PRIMARY KEY,
+	password VARCHAR(30)
+)
+
+SELECT user_id, password FROM WIKJ.T_WIKJ WHERE user_id=:userid;
+INSERT INTO WIKJ.T_WIKJ (user_id, password) VALUES(:userid,:password);
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+SELECT ID, NUIP, FULL_NAME, PHONE, ADDRESS
+FROM WIKJ.T_WIKJ_HAB_PRUEBAFINAL;
+
+INSERT INTO WIKJ.T_WIKJ_HAB_PRUEBAFINAL
+(ID, NUIP, FULL_NAME, PHONE, ADDRESS)
+VALUES(0, 0, '', '', '');
+
+PRUEBA TECNICA
+
+CREATE TABLE WIKJ.T_WIKJ_HAB_PRUEBAFINAL (
+    id NUMBER(5) NOT NULL PRIMARY KEY,
+    nuip NUMBER(10),
+    full_name VARCHAR2(50),
+    phone VARCHAR2(15),
+    address VARCHAR2(30)
+);
+
+
+SELECT id, nuip, full_name, phone, address FROM WIKJ.T_WIKJ_HAB_PRUEBAFINAL WHERE id = :id;
+
+INSERT INTO WIKJ.T_WIKJ_HAB_PRUEBAFINAL (id, nuip, full_name, phone, address) VALUES(:id, :nuip, :full_name, :phone, :address);
+
