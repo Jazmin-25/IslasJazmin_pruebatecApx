@@ -94,7 +94,8 @@ CREATE TABLE WIKJ.T_WIKJ_HAB_PRUEBAFINAL (
 ✅ Devuelve la información insertada o un mensaje de error si el nuip ya está registrado.
 
 ---
-**Resultados**
+
+**⚠️Resultados**
 
 En las pruebas realizadas en mi dispositivo, no se logro levantar el entorno local para verificar si se realizaba con éxito la solicitud en postman. Unicamente se realiza el desarrollo en Inteliji.
 
